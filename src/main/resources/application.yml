@@ -1,0 +1,22 @@
+springdoc:
+  swagger-ui:
+    path: /internal
+
+logging:
+  level:
+    root: INFO
+
+httpClient:
+  xkcd:
+    baseUrl: https://xkcd.com
+    connectionTimeout: 5000
+    requestTimeout: 700
+    maxConnections: 5
+    threadPoolSize: 5
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: '*'
